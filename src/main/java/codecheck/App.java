@@ -12,7 +12,7 @@ public class App {
 		try {
 			int inInt = Integer.parseInt(inStr);
 
-			if(inInt > 1000 || inInt > -1) {
+			if(inInt > 1000 || inInt < 0) {
 				result = "invalid";
 			}else if(inInt % 3 == 0 && inStr.contains("3")){
 				result = "dumb";
